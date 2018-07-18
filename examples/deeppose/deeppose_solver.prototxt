@@ -1,0 +1,21 @@
+net: "examples/deeppose/deeppose_train_test.prototxt"
+
+display: 20
+max_iter: 120000
+test_interval: 500
+test_iter: 100
+
+base_lr: 0.0001
+momentum: 0.9
+weight_decay: 0.005
+
+lr_policy: "inv"
+gamma: 0.0001
+power: 0.75
+
+snapshot: 20000
+snapshot_prefix: "examples/deeppose/snapshot/deeppose"
+solver_mode: GPU
+
+#type: "AdaGrad"
+#debug_info: true
