@@ -1,5 +1,10 @@
 # DeepPose
 
+**NOTE**:
+
+ - This is not an official implementation. Original paper is [DeepPose: Human Pose Estimation via Deep Neural Networks](http://arxiv.org/abs/1312.4659)
+ - This implementation was a project for my deep learning study as a beginner. Codes and performance are crude to some degree. But I do hope it is helpful.
+
 ## Introduction 
 
 This is a implementation at [caffe](http://caffe.berkeleyvision.org/) in DeepPose proposed in [this paper](http://arxiv.org/abs/1312.4659), with [Kinect2 Human Pose Dataset (K2HPD)](http://www.sysu-hcp.net/kinect2-human-pose-dataset-k2hpd/)
