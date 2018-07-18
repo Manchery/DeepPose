@@ -17,7 +17,7 @@ The K2HPD is from *Keze Wang, Shengfu Zhai, Hui Cheng, Xiaodan Liang, and Liang 
 
 Following command should be run in the root directory of this project if not specified
 
-## Changed caffe
+## Caffe for DeepPose
 
 For some reason, it is requested to run on a source-code-changed caffe
 
@@ -27,22 +27,7 @@ The whole source is in the dir `caffe-deeppose` and please compile it by yoursel
 
 (see more: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
 
-**With dependencies installed**,try run these in the dir `caffe-deeppose`
-
-```
-make all
-make test
-make runtest
-```
-
 `pycaffe` is request also if you want to test accuracy of your trained model
-
-Run these in the dir `caffe-deeppose`
-
-```
-make pycaffe
-make distribute
-```
 
 ## Data Preparation for K2HPD
 
