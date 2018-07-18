@@ -1,0 +1,4 @@
+[submodule "caffe-deeppose"]
+	path = caffe-deeppose
+	url = https://github.com/Manchery/caffe-deeppose.git
+	branch = deeppose
