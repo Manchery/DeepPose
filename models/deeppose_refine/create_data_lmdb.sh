@@ -1,7 +1,7 @@
 set -e
 
 ROOT=.
-CUR=$ROOT/examples/deeppose_refine
+CUR=$ROOT/models/deeppose_refine
 
 #--------------------------------------------
 

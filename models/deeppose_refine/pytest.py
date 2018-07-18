@@ -17,12 +17,12 @@ STAGE2MODEL=sys.argv[2]
 #--------------Build STAGE1 & STAGE2-------------------#
 
 def Buildnet1():
-    deploy='./examples/deeppose/deeppose.prototxt'
+    deploy='./models/deeppose/deeppose.prototxt'
     caffe_model=STAGE1MODEL
-    MEAN_NPY_PATH = './examples/deeppose/mean.npy' 
+    MEAN_NPY_PATH = './models/deeppose/mean.npy' 
     if not os.path.exists(MEAN_NPY_PATH):
         print "Create mean.npy"
-        MEAN_PROTO_PATH = './examples/deeppose/train_mean.binaryproto'
+        MEAN_PROTO_PATH = './models/deeppose/train_mean.binaryproto'
         blob = caffe.proto.caffe_pb2.BlobProto()          
         data = open(MEAN_PROTO_PATH, 'rb' ).read()        
         blob.ParseFromString(data)                        
@@ -79,11 +79,11 @@ def Draw(im,predict):
     '''
     
 def Buildnet2():
-    deploy='./examples/deeppose_refine/deeppose_refine.prototxt'
+    deploy='./models/deeppose_refine/deeppose_refine.prototxt'
     caffe_model=STAGE2MODEL
-    MEAN_NPY_PATH = './examples/deeppose_refine/mean.npy'
+    MEAN_NPY_PATH = './models/deeppose_refine/mean.npy'
     if not os.path.exists(MEAN_NPY_PATH):
-        MEAN_PROTO_PATH = './examples/deeppose_refine/train_mean.binaryproto'
+        MEAN_PROTO_PATH = './models/deeppose_refine/train_mean.binaryproto'
         blob = caffe.proto.caffe_pb2.BlobProto()          
         data = open(MEAN_PROTO_PATH, 'rb' ).read()        
         blob.ParseFromString(data)                        

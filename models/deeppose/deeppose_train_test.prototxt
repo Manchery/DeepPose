@@ -8,11 +8,11 @@ layer {
     phase: TRAIN
   }
   transform_param {
-    mean_file: "examples/deeppose/train_mean.binaryproto"
+    mean_file: "models/deeppose/train_mean.binaryproto"
     scale: 0.00390625
   }
   data_param {
-    source: "examples/deeppose/train_data_lmdb"        
+    source: "models/deeppose/train_data_lmdb"        
     batch_size: 32
     backend: LMDB
     label_num: 30
@@ -28,11 +28,11 @@ layer {
     phase: TEST
   }
   transform_param {
-    mean_file: "examples/deeppose/train_mean.binaryproto"    
+    mean_file: "models/deeppose/train_mean.binaryproto"    
     scale: 0.00390625
   }
   data_param {
-    source: "examples/deeppose/test_data_lmdb"           
+    source: "models/deeppose/test_data_lmdb"           
     batch_size: 1
     backend: LMDB
     label_num: 30

@@ -1,4 +1,4 @@
-net: "examples/deeppose/deeppose_train_test.prototxt"
+net: "models/deeppose/deeppose_train_test.prototxt"
 
 display: 20
 max_iter: 120000
@@ -14,7 +14,7 @@ gamma: 0.0001
 power: 0.75
 
 snapshot: 20000
-snapshot_prefix: "examples/deeppose/snapshot/deeppose"
+snapshot_prefix: "models/deeppose/snapshot/deeppose"
 solver_mode: GPU
 
 #type: "AdaGrad"

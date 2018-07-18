@@ -9,7 +9,7 @@ from globalvar import *
 
 ls_path=DSPATH+"stage1/"
 im_path=IMPATH
-ex_path="./examples/deeppose/"
+ex_path="./models/deeppose/"
 
 def getdata(mark):
     

@@ -2,6 +2,6 @@
 
 set -e
 
-if [ ! -d "./examples/deeppose/snapshot/" ]; then mkdir ./examples/deeppose/snapshot; fi
+if [ ! -d "./models/deeppose/snapshot/" ]; then mkdir ./models/deeppose/snapshot; fi
 
-caffe train -solver ./examples/deeppose/deeppose_solver.prototxt 2>&1| tee ./examples/deeppose/deeppose.log
+caffe train -solver ./models/deeppose/deeppose_solver.prototxt 2>&1| tee ./models/deeppose/deeppose.log

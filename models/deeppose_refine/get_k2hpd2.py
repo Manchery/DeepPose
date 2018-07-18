@@ -11,7 +11,7 @@ from globalvar import *
 
 ls_path=DSPATH+"stage2/images.txt"
 im_path=DSPATH+"stage2/data/"
-ex_path="./examples/deeppose_refine/"
+ex_path="./models/deeppose_refine/"
 
 def getdata():
     Size=64

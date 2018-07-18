@@ -69,20 +69,14 @@ It may take a very LONG time
 For example,
 
 ```
-python ./examples/deeppose/pytest.py ./examples/deeppose/snapshot/deeppose_iter_120000.caffemodel ./data/K2HPD/depth_data/depth_images/00000003.png
+python ./models/deeppose/pytest.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel ./data/K2HPD/depth_data/depth_images/00000003.png
 ```
 
 or
 
 ```
-python ./examples/deeppose_refine/pytest.py ./examples/deeppose/snapshot/deeppose_iter_120000.caffemodel ./examples/deeppose_refine/snapshot/deeppose_refine_iter_110000.caffemodel ./data/K2HPD/depth_data/depth_images/00000003.png
+python ./models/deeppose_refine/pytest.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel ./models/deeppose_refine/snapshot/deeppose_refine_iter_110000.caffemodel ./data/K2HPD/depth_data/depth_images/00000003.png
 ```
-
-## Trained Model
-
-There are trained model for stage 1 and stage 2 in the dir `models`
-
-They are `models/deeppose.caffemodel` and `models/deeppose_refine.caffemodel`
 
 ## Other Datasets
 
