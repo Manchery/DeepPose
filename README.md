@@ -64,6 +64,8 @@ First **make sure** there are no other caffes in your environment path and pytho
 
 It may take a very LONG time about 2 - 3 days on a GPU
 
+By default, it runs on GPU. If you want to run on CPU-only, please edit `models/deeppose/deeppose_solver.prototxt` and `models/deeppose_refine/deeppose_refine_solver.prototxt` 
+
 ## Predict a Image 
 
 For example,
