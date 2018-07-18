@@ -27,6 +27,8 @@ The whole source is in the dir `caffe-deeppose` and please compile it by yoursel
 
 (see more: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
 
+**HINT**: since data layer changed, it is normal to raise an error when you run `make runtest` testing data layer
+
 `pycaffe` is request also if you want to test accuracy of your trained model
 
 ## Data Preparation for K2HPD
