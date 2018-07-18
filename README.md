@@ -23,11 +23,11 @@ For some reason, it is requested to run on a source-code-changed caffe
 
 The main change is about `Data` layer, `EuclideanLoss` layer and `convert_imageset_multilabel.cpp`
 
-The whole source is in the dir `caffe` and please compile it by yourself
+The whole source is in the dir `caffe-deeppose` and please compile it by yourself
 
 (see more: [Caffe installation instructions](http://caffe.berkeleyvision.org/installation.html))
 
-**With dependencies installed**,try run these in the dir `caffe`
+**With dependencies installed**,try run these in the dir `caffe-deeppose`
 
 ```
 make all
@@ -37,7 +37,7 @@ make runtest
 
 `pycaffe` is request also if you want to test accuracy of your trained model
 
-Run these in the dir `caffe`
+Run these in the dir `caffe-deeppose`
 
 ```
 make pycaffe
@@ -62,7 +62,7 @@ First **make sure** there are no other caffes in your environment path and pytho
 ./deeppose.sh
 ```
 
-It may take a very LONG time
+It may take a very LONG time about 2 - 3 days on a GPU
 
 ## Predict a Image 
 
@@ -80,4 +80,4 @@ python ./models/deeppose_refine/pytest.py ./models/deeppose/snapshot/deeppose_it
 
 ## Other Datasets
 
-If you want to train on other dataset, please modify the file `globalvar.py`, in which you can describe about the dataset and write your own `data/K2HPD/stage/get_stage1.py` to accord with your dataset
+If you want to train on other dataset, please modify the file `globalvar.py`, in which you can describe about the dataset and write your own `get_stage1.py` to accord with your dataset
