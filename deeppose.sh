@@ -1,6 +1,6 @@
 set -e
 
-CAFFE=~/mancherywu/caffe
+CAFFE=./caffe-deeppose
 
 export PYTHONPATH=$CAFFE/python:$PYTHONPATH
 export PATH=$CAFFE/build/tools:$PATH
