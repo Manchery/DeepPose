@@ -51,7 +51,7 @@ cp your/path/to/test_annos.txt data/K2HPD
 First **make sure** there are no other caffes in your environment path and python environment path, then
 
 ```
-./deeppose.sh
+./deeppose_train.sh
 ```
 
 It may take a very LONG time about 2 - 3 days on a GPU
@@ -72,6 +72,22 @@ or
 python ./models/deeppose_refine/pytest.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel ./models/deeppose_refine/snapshot/deeppose_refine_iter_110000.caffemodel ./data/K2HPD/depth_data/depth_images/00000003.png
 ```
 
+## Test accuracy 
+
+For example,
+
+```
+python ./models/deeppose/pyaccuracy.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel
+```
+
+or
+
+```
+python ./models/deeppose_refine/pyaccuracy.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel ./models/deeppose_refine/snapshot/deeppose_refine_iter_120000.caffemodel
+```
+
 ## Other Datasets
 
 If you want to train on other dataset, please modify the file `globalvar.py`, in which you can describe about the dataset and write your own `get_stage1.py` to accord with your dataset
+
+And you may need to modify the deploy `deeppose_refine.prototxt`. Its input size are relative to the number of joints for we use it to process all the joints of one person as a batch.  
