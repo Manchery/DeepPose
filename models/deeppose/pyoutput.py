@@ -11,6 +11,9 @@ from globalvar import *
 
 STAGE1MODEL=sys.argv[1]
 
+caffe.set_mode_gpu()
+caffe.set_device(0)
+
 #-----------------STAGE1--------------------#
 
 def Buildnet():

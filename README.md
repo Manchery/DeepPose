@@ -54,9 +54,20 @@ First **make sure** there are no other caffes in your environment path and pytho
 ./deeppose_train.sh
 ```
 
-It may take a very LONG time about 2 - 3 days on a GPU
+**It may take a very LONG time about 2 - 3 days on a GPU**
 
-By default, it runs on GPU. If you want to run on CPU-only, please edit `models/deeppose/deeppose_solver.prototxt` and `models/deeppose_refine/deeppose_refine_solver.prototxt` 
+### CPU-only
+
+By default, it runs on GPU. If you want to run on CPU-only, please edit `models/deeppose/deeppose_solver.prototxt` and `models/deeppose_refine/deeppose_refine_solver.prototxt`
+
+and delete 
+
+```
+caffe.set_mode_gpu()
+caffe.set_device(0)
+``` 
+
+in python scripts such as `pyoutput.py`
 
 ## Predict a Image 
 
