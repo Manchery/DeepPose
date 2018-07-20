@@ -1,13 +1,13 @@
 net: "models/deeppose_refine/deeppose_refine_train_test.prototxt"
 
 display: 20
-max_iter: 120000
+max_iter: 40000
 test_interval: 500
 test_iter: 100
 
 base_lr: 0.0001
 momentum: 0.9
-weight_decay: 0.001
+weight_decay: 0.005
 
 lr_policy: "inv"
 gamma: 0.0001

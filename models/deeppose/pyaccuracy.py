@@ -6,6 +6,7 @@ import numpy as np
 import cv2
 import sys
 import copy
+import random
 
 from globalvar import *
 
@@ -58,8 +59,12 @@ predict=[]
 label=[]
 total_test=0
 
+RATE=40
+
 with open(testlist,'r') as f:
     for line in f.readlines():
+        if random.randint(1,RATE)==1:
+            continue
         dat=(line.lstrip('\x00')).split()
         img=dat[0]
         label.append(np.zeros((JOINTS,2)))
@@ -70,7 +75,9 @@ with open(testlist,'r') as f:
         predict.append(output)
         total_test+=1
         if total_test%100==0:
-            print "Read %d Images !"%total_test
+            print "Read and Predict %d Images !"%total_test
+    if total_test%100!=0:
+        print "Read and Predict %d Images !"%total_test
 
 predict=np.array(predict)
 label=np.array(label)
