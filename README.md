@@ -86,6 +86,8 @@ or
 python ./models/deeppose_refine/pyaccuracy.py ./models/deeppose/snapshot/deeppose_iter_120000.caffemodel ./models/deeppose_refine/snapshot/deeppose_refine_iter_120000.caffemodel
 ```
 
+**Since huge size of test set, it may takes a LONG time. You can change the code by yourself.**
+
 ## Other Datasets
 
 If you want to train on other dataset, please modify the file `globalvar.py`, in which you can describe about the dataset and write your own `get_stage1.py` to accord with your dataset
