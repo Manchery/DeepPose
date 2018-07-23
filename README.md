@@ -112,14 +112,10 @@ And you may need to modify the deploy `deeppose_refine.prototxt`. Its input size
  - For show, some good results are selected manually
  - The left is the result of prediction in stage 1, and the right is the result of refinement in stage 2
 
-<div style="text-align: center" >
+<img src="https://i.loli.net/2018/07/23/5b5588b80ff02.png" alt="" height=150/>
 
-<img style="display: inline-block" src="https://i.loli.net/2018/07/23/5b5588b80ff02.png" alt="" align="center" height=150/>
+<img src="https://i.loli.net/2018/07/23/5b5588b81089f.png" alt="" height=150/>
 
-<img style="display: inline-block" src="https://i.loli.net/2018/07/23/5b5588b81089f.png" alt=""  align="center" height=150/>
+<img src="https://i.loli.net/2018/07/23/5b5588b812836.png" alt="" height=150/>
 
-<img style="display: inline-block" src="https://i.loli.net/2018/07/23/5b5588b812836.png" alt="" align="center" height=150/>
-
-<img style="display: inline-block" src="https://i.loli.net/2018/07/23/5b5588b8131f2.png" alt="" align="center" height=150/>
-
-</div>
+<img src="https://i.loli.net/2018/07/23/5b5588b8131f2.png" alt="" height=150/>
