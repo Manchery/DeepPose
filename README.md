@@ -112,7 +112,7 @@ And you may need to modify the deploy `deeppose_refine.prototxt`. Its input size
  - For show, some good results are selected manually
  - The left is the result of prediction in stage 1, and the right is the result of refinement in stage 2
 
-<img src="https://i.loli.net/2018/07/23/5b5588b80ff02.png" alt="WX20180723-154857@2x.png" title="WX20180723-154857@2x.png" align="center"/>
-<img src="https://i.loli.net/2018/07/23/5b5588b81089f.png" alt="WX20180723-154934@2x.png" title="WX20180723-154934@2x.png" align="center"/>
-<img src="https://i.loli.net/2018/07/23/5b5588b812836.png" alt="WX20180723-154803@2x.png" title="WX20180723-154803@2x.png" align="center"/>
-<img src="https://i.loli.net/2018/07/23/5b5588b8131f2.png" alt="WX20180723-154712@2x.png" title="WX20180723-154712@2x.png" align="center"/>
+<img src="https://i.loli.net/2018/07/23/5b5588b80ff02.png" alt="WX20180723-154857@2x.png" title="WX20180723-154857@2x.png" align="center" height=200/>
+<img src="https://i.loli.net/2018/07/23/5b5588b81089f.png" alt="WX20180723-154934@2x.png" title="WX20180723-154934@2x.png" align="center" height=200/>
+<img src="https://i.loli.net/2018/07/23/5b5588b812836.png" alt="WX20180723-154803@2x.png" title="WX20180723-154803@2x.png" align="center" height=200/>
+<img src="https://i.loli.net/2018/07/23/5b5588b8131f2.png" alt="WX20180723-154712@2x.png" title="WX20180723-154712@2x.png" align="center" height=200/>
