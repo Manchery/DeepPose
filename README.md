@@ -5,11 +5,11 @@
  - This is not an official implementation. Original paper is [DeepPose: Human Pose Estimation via Deep Neural Networks](http://arxiv.org/abs/1312.4659)
  - This implementation was a project for my deep learning study as a beginner. Codes and performance are crude to some degree. But I do hope it is helpful.
 
-## Introduction 
+## Introduction
 
 This is a implementation at [caffe](http://caffe.berkeleyvision.org/) in DeepPose proposed in [this paper](http://arxiv.org/abs/1312.4659), with [Kinect2 Human Pose Dataset (K2HPD)](http://www.sysu-hcp.net/kinect2-human-pose-dataset-k2hpd/)
 
-Caffe is a deep learning framework
+Caffe is the deep learning framework
 
 >@article{jia2014caffe,
   Author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
@@ -18,7 +18,9 @@ Caffe is a deep learning framework
   Year = {2014}
 } 
 
-The K2HPD is from *Keze Wang, Shengfu Zhai, Hui Cheng, Xiaodan Liang, and Liang Lin. Human Pose Estimation from Depth Images via Inference Embedded Multi-task Learning. In Proceedings of the ACM International Conference on Multimedia (ACM MM), 2016.*
+The K2HPD is from 
+
+>Keze Wang, Shengfu Zhai, Hui Cheng, Xiaodan Liang, and Liang Lin. Human Pose Estimation from Depth Images via Inference Embedded Multi-task Learning. In Proceedings of the ACM International Conference on Multimedia (ACM MM), 2016.*
 
 Following command should be run in the root directory of this project if not specified
 
