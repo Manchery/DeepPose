@@ -19,15 +19,17 @@ def Buildnet1():
     deploy='./models/deeppose/deeppose.prototxt'
     caffe_model=STAGE1MODEL
     MEAN_NPY_PATH = './models/deeppose/mean.npy' 
-    if not os.path.exists(MEAN_NPY_PATH):
-        print "Create mean.npy"
-        MEAN_PROTO_PATH = './models/deeppose/train_mean.binaryproto'
-        blob = caffe.proto.caffe_pb2.BlobProto()          
-        data = open(MEAN_PROTO_PATH, 'rb' ).read()        
-        blob.ParseFromString(data)                        
-        array = np.array(caffe.io.blobproto_to_array(blob))
-        mean_npy = array[0]
-        np.save(MEAN_NPY_PATH ,mean_npy)
+    os.system("rm -f "+MEAN_NPY_PATH)
+    
+    print "Create mean.npy"
+    MEAN_PROTO_PATH = './models/deeppose/train_mean.binaryproto'
+    blob = caffe.proto.caffe_pb2.BlobProto()          
+    data = open(MEAN_PROTO_PATH, 'rb' ).read()        
+    blob.ParseFromString(data)                        
+    array = np.array(caffe.io.blobproto_to_array(blob))
+    mean_npy = array[0]
+    np.save(MEAN_NPY_PATH ,mean_npy)
+
     net = caffe.Net(deploy,caffe_model,caffe.TEST)
     transformer = caffe.io.Transformer({'data':net.blobs['data'].data.shape})
     transformer.set_mean('data', (np.load(MEAN_NPY_PATH).mean(1).mean(1))/255.)
