@@ -63,7 +63,7 @@ RATE=40
 
 with open(testlist,'r') as f:
     for line in f.readlines():
-        if random.randint(1,RATE)==1:
+        if random.randint(1,RATE)!=1:
             continue
         dat=(line.lstrip('\x00')).split()
         img=dat[0]

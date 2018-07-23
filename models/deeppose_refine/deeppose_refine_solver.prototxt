@@ -1,7 +1,7 @@
 net: "models/deeppose_refine/deeppose_refine_train_test.prototxt"
 
 display: 20
-max_iter: 40000
+max_iter: 120000
 test_interval: 500
 test_iter: 100
 
