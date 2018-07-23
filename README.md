@@ -104,3 +104,15 @@ python ./models/deeppose_refine/pyaccuracy.py ./models/deeppose/snapshot/deeppos
 If you want to train on other dataset, please modify the file `globalvar.py`, in which you can describe about the dataset and write your own `get_stage1.py` to accord with your dataset
 
 And you may need to modify the deploy `deeppose_refine.prototxt`. Its input size are relative to the number of joints for we use it to process all the joints of one person as a batch.  
+
+## Some Result
+
+**NOTE:** 
+
+ - For show, some good results are selected manually
+ - The left is the result of prediction in stage 1, and the right is the result of refinement in stage 2
+
+<img src="https://i.loli.net/2018/07/23/5b5588b80ff02.png" alt="WX20180723-154857@2x.png" title="WX20180723-154857@2x.png" align="center"/>
+<img src="https://i.loli.net/2018/07/23/5b5588b81089f.png" alt="WX20180723-154934@2x.png" title="WX20180723-154934@2x.png" align="center"/>
+<img src="https://i.loli.net/2018/07/23/5b5588b812836.png" alt="WX20180723-154803@2x.png" title="WX20180723-154803@2x.png" align="center"/>
+<img src="https://i.loli.net/2018/07/23/5b5588b8131f2.png" alt="WX20180723-154712@2x.png" title="WX20180723-154712@2x.png" align="center"/>
